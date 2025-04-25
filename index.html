@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>Home Page</title>
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1745599670597"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1745599670597">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header" data-fls-header="" data-fls-header-scroll="80" data-fls-header-scroll-show="">
+				<div class="header__container">
+					<div class="header__inner">
+						<div class="header__logo">
+							<a class="header__link-logo" href="#">Weeb</a>
+						</div>
+						<div class="header__menu menu">
+							<button class="menu__icon icon-menu" type="button" data-fls-menu="">
+								<span></span>
+							</button>
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="#" data-fls-scrollto=".discover" data-fls-scrollto-header="" class="menu__link">About Us</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" data-fls-scrollto=".powerful" data-fls-scrollto-header="" class="menu__link">Solutions</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" data-fls-scrollto=".customers" data-fls-scrollto-header="" class="menu__link">Pricing</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" data-fls-scrollto=".speed" data-fls-scrollto-header="" class="menu__link">Resources</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<!--
+<fetch url="@components/layout/menu/menu.js?v=1745599670597on">
+<each loop='item in response'>
+</each>
+</fetch>
+-->
+						<div class="header__actions actions-header" data-fls-dynamic=".menu__body,479.98,last">
+							<a class="actions-header__button button button--mini button--trans" href="#" data-fls-button="">Log In</a>
+							<a class="actions-header__button button button--mini" href="#" data-fls-button="">Join Now</a>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main class="page page--home" data-fls-paddblock="">
+				<section class="home__hero hero" data-fls-watcher="" data-fls-watcher-once="">
+					<div class="home__container">
+						<div class="hero__inner">
+							<div class="hero__block-header block-header block-header--center" data-fls-blockheader="">
+								<h1 class="block-header__title">
+									Design
+									<span class="block-header__line">Faster</span>
+									<span class="block-header__purple">&</span>
+									<span class="block-header__line block-header__line--right">Better</span>
+								</h1>
+								<div class="block-header__text">
+									<p>
+										Sit elit feugiat turpis sed integer integer accumsan turpis. Sed
+							suspendisse nec lorem mauris. Pharetra, eu imperdiet ipsum
+							ultrices amet, dui sit suspendisse.
+									</p>
+								</div>
+								<div class="block-header__buttons">
+									<a class="block-header__button button" href="#">Join Now</a>
+									<a class="block-header__button button button--white-border" href="#">View Demo</a>
+								</div>
+							</div>
+						</div>
+						<div class="hero__image-box">
+							<img class="hero__image" alt="image" src="./assets/img/01.webp" srcset="./assets/img/01.webp 1x,./assets/img/01-2x.webp 2x,./assets/img/01-3x.webp 3x">
+						</div>
+					</div>
+				</section>
+				<section class="home__companies companies" data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.8">
+					<div class="companies__container">
+						<h2 class="companies__title">Join Leading Companies</h2>
+						<div class="companies__items" data-fls-marquee="">
+							<div class="companies__item">
+								<img src="data:image/png;base64,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" alt="image">
+							</div>
+							<div class="companies__item">
+								<img src="data:image/png;base64,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" alt="image">
+							</div>
+							<div class="companies__item">
+								<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAASCAYAAAAqqJKOAAAABHNCSVQICAgIfAhkiAAABP5JREFUWIXNmFuIVlUUx3/rc0bHy1gUNpoZ2othahoWmBQWFalkdtHxwcosIyTDyMoXi65ECWY9WGCZRk2FYGpJipWJVqhdqLQyJS3vc0mt0RmdmX8Pa3+6PfN9M0eZz/zDhrMv/7XXWWfvdTlGBEmXA+OBIUA3oBHYBSwFFgMHzKwxWl8OPBu6tcAkM/ueBCR1CHKqgS5AhZlND3PDgPmAkrwcOA8YZWbrJS0G+gHtgU3AnWZW1xJZ0ivACKAI2AGUm1llin2R1B4YBowFLgPOBeqAP4D3gZXAETNTltBL0lxJ/yg/dkoaI6k42ujRxJpb8yjUUdJf0bpFkkrCXHkLeybRIGlo4K2JxndL6pnCMBUR57CkgSkN2lfSEklHW9Btg6SrADKSDHgBeBA/RfnQE3gPuCGNIgVCNWBnckNJXYGFwGiguIWlQ4APJF1RBFwD3BJN/gZMB/bjLzACeDI8dwRmSfr0+DFve9wD/EruF/gb2FagffPhPmBQ1F8JPIdf/XZh/v4w1xuYXgQMBs6JSDPM7ONsR9J6oAw/yQBdgYtxn1QIFJvZ+gLJPh0Mwv02wDFgmpn9kp2UtAW4BLg+DPUpwi0eo3vcMTNJehPYA5QAh4B9ba/7WYuG6Lkd0AM4blQzq5H0ErAuzO8oAr4F/uWEP50pqQswDzhkZk1mthHYmEKBfZJKE2MCeuHRMg2q8sioBxoK6Hby4SvgXtz9ZYDXJD0PLAEOm5nMbAWwIkvI4FZ/Bzgaxi4EXgb+BBZIGi3popQKfA1UJlo1nvK0FARjfBQ4SRlbgUtTymhLfAJ8GfX7Ae8CvwNzJA2XdNLtzphZLfAIMBfPNbMoBSbgX2SppIcllaVQokOitefUI3ZxDhndSH/a2wxmthe3w4eJqR7AVOALoELSuOwNywRiPTADGA4soLmfHQzMAV6VdEELOhzAs4ZcLS324KdyW9S2AKuAvacgp81gZruAKcAoYBleFMUYjhcAMyV1KYqIdcBGSZOBx4HbgHLgSk5c3XG4gabm2f9G3G3EaMK/6lo8c2gNDwDfED54gHD/VZubUniYWTWwXNIq3EWOx+0xAK/QDHgM2JqR1ElSSWgZMztmZvvN7A3gJuAOPD/MYqykznn27hm4cavCT96hlPqXmVlVQkbl/2VQeTVYkq0AzeyomW03sxeB6/Ag1hRR7srgyewPoc2JBZpZA7AamJ3Yq09hXuHsQihj1wEb8Fs8MZ43s4O4W1oUDZdm8GvWN7SxkgYkZDdycuTO0NyntCWaWl/SDDpNXmvv0YgXRv3xnyiTJPXIsaZT1LcivJ4fGgbKgLckvY1feQFXAxMj0gE8nSgUeku6G0+kkzgIrDazmsR4Z6C/pJtzcGqB78xsa2K8GOiT/QmSwBHgJzPbJOlzvGICL+nnS6rAU1DDS/yREXc7krpLWtja76GAOklTsmyd+b9UhyVdG3hrWlsc4YnAqWh15QnMCpx+ktam5FRKGpkJedg04Ck8suf6J1kP7AQeAl7PZbis/VqYS0ZzRc9pUZyQkxZpC49mHDPbjEf5eUANbosk6oGfgQlmtrwoEGuAZyTNBm4HBgLn4y9QBfwILAtpRYwNeH7WDo/um/MoWI8HwrW4/1kecmOCMhXkvu5JlAK7w/NKPKdtDSV4sAX4jHQfpQNR2Wlmu4HJkp4GxuDxpyt+IPbidlhqZscA/gOlXZE53y71KAAAAABJRU5ErkJggg==" alt="image">
+							</div>
+							<div class="companies__item">
+								<img src="data:image/png;base64,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" alt="image">
+							</div>
+							<div class="companies__item">
+								<img src="data:image/png;base64,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" alt="image">
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="home__discover discover" data-fls-watcher="navigator">
+					<div class="discover__container" data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.8">
+						<div class="discover__body">
+							<div class="discover__block-header block-header" data-fls-blockheader="">
+								<h2 class="block-header__title">
+									<span class="block-header__purple-light">Unlimited</span>
+									<span class="block-header__border">
+										<span>ideas</span>
+									</span>
+									for
+						your next great projects
+								</h2>
+								<h3 class="block-header__sub-title">DISCOVER</h3>
+								<div class="block-header__text">
+									<p>
+										Scelerisque auctor dolor diam tortor, fames faucibus non interdum
+							nunc. Ultrices nibh sapien elit gravida ac, rutrum molestie
+							adipiscing lacinia.
+									</p>
+								</div>
+								<a class="block-header__link block-header__link--icon-arrow-right" href="#">Discover Ideas</a>
+							</div>
+							<div class="discover__image">
+								<img class="discover__picture" src="data:image/svg+xml,%3csvg%20width='375.000000'%20height='379.000000'%20viewBox='0%200%20375%20379'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdesc%3e%20Created%20with%20Pixso.%20%3c/desc%3e%3cdefs/%3e%3cellipse%20id='Ellipse%2025'%20cx='122.500000'%20cy='227.500000'%20rx='120.000000'%20ry='149.000000'%20stroke='%239333EA'%20stroke-opacity='1.000000'%20stroke-width='5.000000'/%3e%3cellipse%20id='Ellipse%2026'%20cx='122.500000'%20cy='253.000000'%20rx='83.000000'%20ry='84.500000'%20stroke='%23D8B4FE'%20stroke-opacity='1.000000'%20stroke-width='5.000000'/%3e%3cpath%20id='Ellipse%2027'%20d='M196%20252C196%20238.52%20192.46%20225.89%20186.28%20215C179.68%20203.33%20170.43%20194.19%20159.75%20187.91C148.32%20181.17%20135.82%20177.98%20123.5%20178L123.5%20252L196%20252Z'%20fill='%23C2410C'%20fill-opacity='1.000000'%20fill-rule='evenodd'/%3e%3crect%20id='Rectangle%2020'%20x='125.500000'%20y='2.500000'%20width='247.000000'%20height='247.000000'%20stroke='%23581C87'%20stroke-opacity='1.000000'%20stroke-width='5.000000'/%3e%3c/svg%3e" alt="image">
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="home__powerful powerful" data-fls-watcher="navigator">
+					<div class="powerful__container" data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.8">
+						<div class="powerful__body">
+							<div class="powerful__block-header block-header" data-fls-blockheader="">
+								<h2 class="block-header__title block-header__title--min">All the tools you can imagine</h2>
+								<h3 class="block-header__sub-title">Powerful</h3>
+								<div class="block-header__text">
+									<p>
+										Scelerisque auctor dolor diam tortor, fames faucibus non interdum
+							nunc. Ultrices nibh sapien elit gravida ac, rutrum molestie
+							adipiscing lacinia.
+									</p>
+								</div>
+							</div>
+							<div class="powerful__image">
+								<img class="powerful__picture" alt="image" src="./assets/img/01.webp" srcset="./assets/img/01.webp 1x,./assets/img/01-2x.webp 2x,./assets/img/01-3x.webp 3x">
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="home__customers customers" data-fls-watcher="navigator">
+					<div class="customers__container" data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.8">
+						<div class="customers__body">
+							<div class="customers__block-header block-header" data-fls-blockheader="">
+								<h2 class="block-header__title">
+									<span class="block-header__purple-light">Target</span>
+									<span class="block-header__box">
+										<span>customers</span>
+									</span>
+									with our powerful AI kit
+								</h2>
+								<h3 class="block-header__sub-title">Customers</h3>
+								<div class="block-header__text">
+									<p>
+										Scelerisque auctor dolor diam tortor, fames faucibus non interdum
+							nunc. Ultrices nibh sapien elit gravida ac, rutrum molestie
+							adipiscing lacinia.
+									</p>
+								</div>
+								<a class="block-header__link block-header__link--icon-arrow-right" href="#">How Targeting Customers Works</a>
+							</div>
+							<div class="customers__image">
+								<img class="customers__picture" src="data:image/svg+xml,%3csvg%20width='285'%20height='286'%20viewBox='0%200%20285%20286'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='16.6333'%20y='18.4297'%20width='251'%20height='251'%20stroke='%23581C87'%20stroke-width='5'/%3e%3crect%20x='142.133'%20y='16.4652'%20width='179'%20height='179'%20transform='rotate(45%20142.133%2016.4652)'%20stroke='%23581C87'%20stroke-width='5'/%3e%3crect%20x='179.218'%20y='4.34475'%20width='203'%20height='203'%20transform='rotate(60%20179.218%204.34475)'%20stroke='%23581C87'%20stroke-width='5'/%3e%3crect%20x='222.366'%20y='3.99155'%20width='227'%20height='227'%20transform='rotate(75%20222.366%203.99155)'%20stroke='%23581C87'%20stroke-width='5'/%3e%3crect%20x='86.9011'%20y='48.9915'%20width='155'%20height='155'%20transform='rotate(15%2086.9011%2048.9915)'%20fill='%23BE185D'%20stroke='%23BE185D'%20stroke-width='5'/%3e%3c/svg%3e" alt="image">
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="home__speed speed" data-fls-watcher="navigator">
+					<div class="speed__container" data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.8">
+						<div class="speed__body">
+							<div class="speed__block-header block-header" data-fls-blockheader="">
+								<h2 class="block-header__title block-header__title--min">Work fast, w/o interruptions</h2>
+								<h3 class="block-header__sub-title">Speed</h3>
+								<div class="block-header__text block-header__text--no-balance">
+									<p>
+										Scelerisque auctor dolor diam tortor, fames faucibus non interdum
+							nunc. Ultrices nibh sapien elit gravida ac, rutrum molestie
+							adipiscing lacinia.
+									</p>
+								</div>
+							</div>
+							<div class="speed__image">
+								<img class="speed__picture" alt="image" src="./assets/img/01.webp" srcset="./assets/img/01.webp 1x,./assets/img/01-2x.webp 2x,./assets/img/01-3x.webp 3x">
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="home__testimonials testimonials">
+					<div class="testimonials__container">
+						<div class="testimonials__inner">
+							<div class="testimonials__right" data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.5">
+								<h2 class="testimonials__title">
+									<span class="testimonials__line">Bigapp</span>
+									got to the next level
+								</h2>
+								<h3 class="testimonials__sub-title">Testimonials</h3>
+								<a class="testimonials__link testimonials__link--icon-arrow-right" href="#">
+									<span>View Case Study</span>
+								</a>
+							</div>
+							<div class="testimonials__image">
+								<img class="testimonials__picture" alt="image" src="./assets/img/02.webp" srcset="./assets/img/02.webp 1x,./assets/img/02-2x.webp 2x,./assets/img/02-3x.webp 3x">
+							</div>
+							<div class="testimonials__left" data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.5">
+								<div class="testimonials__blockquote">
+									<blockquote>
+										“Viverra viverra nibh enim et aliquam, enim. Tempor, sit mus
+							viverra orci dui consequat turpis scelerisque faucibus.”
+									</blockquote>
+								</div>
+								<div class="testimonials__author">
+									<div class="testimonials__avatar">
+										<img alt="Rwanda-Melflor" src="./assets/img/avatar.webp" srcset="./assets/img/avatar.webp 1x,./assets/img/avatar-2x.webp 2x,./assets/img/avatar-3x.webp 3x">
+									</div>
+									<div class="testimonials__info">
+										<div class="testimonials__name">Rwanda Melflor</div>
+										<div class="testimonials__position">Co-founder Bigapp</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="home__events events">
+					<div class="events__container">
+						<div class="events__header">
+							<h2 class="events__title">Design events near your</h2>
+							<a class="events__link events__link--icon-arrow-right link-event" href="#">
+								<span>Explore Events</span>
+							</a>
+						</div>
+						<div class="events__items">
+							<article class="events__item item-event">
+								<a class="item-event__link-category" href="#">
+									<span class="item-event__category">Design Thinking</span>
+								</a>
+								<a class="item-event__link-image" href="#">
+									<img class="item-event__image" alt="image" src="./assets/img/events/01.webp" srcset="./assets/img/events/01.webp 1x,./assets/img/events/01-2x.webp 2x,./assets/img/events/01-3x.webp 3x">
+								</a>
+								<div class="item-event__body body-item-event">
+									<a class="body-item-event__category" href="#">Design Thinking</a>
+									<a class="body-item-event__link-title" href="#">
+										<h4 class="body-item-event__title">Wild Horse Event</h4>
+									</a>
+									<a class="body-item-event__link body-item-event__link--icon-arrow-right link-event" href="#">
+										<span>Buy Tickets</span>
+									</a>
+								</div>
+							</article>
+							<article class="events__item item-event">
+								<a class="item-event__link-category" href="#">
+									<span class="item-event__category">Festival</span>
+								</a>
+								<a class="item-event__link-image" href="#">
+									<img class="item-event__image" alt="image" src="./assets/img/events/02.webp" srcset="./assets/img/events/02.webp 1x,./assets/img/events/02-2x.webp 2x,./assets/img/events/02-3x.webp 3x">
+								</a>
+								<div class="item-event__body body-item-event">
+									<a class="body-item-event__category" href="#">Festival</a>
+									<a class="body-item-event__link-title" href="#">
+										<h4 class="body-item-event__title">Music & Colors</h4>
+									</a>
+									<a class="body-item-event__link body-item-event__link--icon-arrow-right link-event" href="#">
+										<span>Buy Tickets</span>
+									</a>
+								</div>
+							</article>
+							<article class="events__item item-event">
+								<a class="item-event__link-category" href="#">
+									<span class="item-event__category">Bootcamp</span>
+								</a>
+								<a class="item-event__link-image" href="#">
+									<img class="item-event__image" alt="image" src="./assets/img/events/03.webp" srcset="./assets/img/events/03.webp 1x,./assets/img/events/03-2x.webp 2x,./assets/img/events/03-3x.webp 3x">
+								</a>
+								<div class="item-event__body body-item-event">
+									<a class="body-item-event__category" href="#">Bootcamp</a>
+									<a class="body-item-event__link-title" href="#">
+										<h4 class="body-item-event__title">Happy Father’s Day</h4>
+									</a>
+									<a class="body-item-event__link body-item-event__link--icon-arrow-right link-event" href="#">
+										<span>Buy Tickets</span>
+									</a>
+								</div>
+							</article>
+						</div>
+					</div>
+				</section>
+			</main>
+			<!-- 1.41.10 -->
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__container">
+					<div class="footer__top top-footer">
+						<div class="top-footer__logo">
+							<a class="top-footer__logo-link" href="#">Weeb</a>
+						</div>
+						<div data-fls-spollers="479.98" class="top-footer__spollers spollers">
+							<details class="spollers__item">
+								<summary class="spollers__title">PRODUCT</summary>
+								<div class="spollers__body">
+									<ul class="spollers__list">
+										<li class="spollers__item">
+											<a href="#" class="spollers__link">Pricing</a>
+										</li>
+										<li class="spollers__item">
+											<a href="#" class="spollers__link">Overview</a>
+										</li>
+										<li class="spollers__item">
+											<a href="#" class="spollers__link">Browse</a>
+										</li>
+										<li class="spollers__item">
+											<a href="#" class="spollers__link">Accessibility</a>
+										</li>
+										<li class="spollers__item">
+											<a href="#" class="spollers__link">Five</a>
+										</li>
+									</ul>
+								</div>
+							</details>
+							<details class="spollers__item">
+								<summary class="spollers__title">Solutions</summary>
+								<div class="spollers__body">
+									<ul class="spollers__list">
+										<li class="spollers__item">
+											<a href="#" class="spollers__link">Brainstorming</a>
+										</li>
+										<li class="spollers__item">
+											<a href="#" class="spollers__link">Ideation</a>
+										</li>
+										<li class="spollers__item">
+											<a href="#" class="spollers__link">Wireframing</a>
+										</li>
+										<li class="spollers__item">
+											<a href="#" class="spollers__link">Research</a>
+										</li>
+									</ul>
+								</div>
+							</details>
+							<details class="spollers__item">
+								<summary class="spollers__title">Resources</summary>
+								<div class="spollers__body">
+									<ul class="spollers__list">
+										<li class="spollers__item">
+											<a href="#" class="spollers__link">Help Center</a>
+										</li>
+										<li class="spollers__item">
+											<a href="#" class="spollers__link">Blog</a>
+										</li>
+										<li class="spollers__item">
+											<a href="#" class="spollers__link">Tutorials</a>
+										</li>
+									</ul>
+								</div>
+							</details>
+							<details class="spollers__item">
+								<summary class="spollers__title">Company</summary>
+								<div class="spollers__body">
+									<ul class="spollers__list">
+										<li class="spollers__item">
+											<a href="#" class="spollers__link">About</a>
+										</li>
+										<li class="spollers__item">
+											<a href="#" class="spollers__link">Press</a>
+										</li>
+										<li class="spollers__item">
+											<a href="#" class="spollers__link">Events</a>
+										</li>
+										<li class="spollers__item">
+											<a href="#" class="spollers__link">Careers</a>
+										</li>
+									</ul>
+								</div>
+							</details>
+						</div>
+					</div>
+					<div class="footer__bottom bottom-footer">
+						<div class="bottom-footer__copy">@ 2025 Weeb, Inc. All rights reserved.</div>
+						<div class="bottom-footer__socials">
+							<a class="bottom-footer__social-item bottom-footer__social-item--icon-youtube" href="#" target="_blank"></a>
+							<a class="bottom-footer__social-item bottom-footer__social-item--icon-facebook" href="#" target="_blank"></a>
+							<a class="bottom-footer__social-item bottom-footer__social-item--icon-twitter" href="#" target="_blank"></a>
+							<a class="bottom-footer__social-item bottom-footer__social-item--icon-instagram" href="#" target="_blank"></a>
+							<a class="bottom-footer__social-item bottom-footer__social-item--icon-LinkIn" href="#" target="_blank"></a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
